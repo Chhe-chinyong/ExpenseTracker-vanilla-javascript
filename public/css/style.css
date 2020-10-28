@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    color: #10ac84;
+}
+
+h1, h3 {
+    padding: 0.5rem;
+}
+
+.class {
+    display: flex;
+}
+
+.name {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.name input[type="text"]
+{
+    flex: 1;
+    padding: 0.4rem;
+}
+
+.other{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.other .date {
+    display: flex;
+    width: 50%;
+    align-items: center;
+
+}
+
+input[type='date']
+{
+   
+    flex: 1;
+    width: 100%;
+   
+
+}
+
+.other .amount {
+    display: flex;
+    width: 50%;
+    margin: 0.5rem 0;
+    align-items: center;
+
+}
+
+.other input[type="date"]
+{
+    flex: 1;
+    padding: 0.2rem;
+    min-width: 10rem;
+    
+
+}
+
+.other input[type="number"]
+{   
+    flex: 1;
+    padding: 0.4rem;
+
+}
+
+input[type="submit"]
+{
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: #2ecc71;
+    margin: 1rem 0rem;
+    outline: none; 
+}
+
+table{
+    width: 100%;
+    text-align: left;
+}
+
+.id {
+    width: 20%;
+}
+
+.expense-table
+{   
+    font-weight: 100;
+    background-color: whitesmoke;
+}
+
+
+td {
+    border: 1px solid gray;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tbodyTag {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd) {background-color: white;}
+
+tr :hover {background-color: #ddd;}
+
+#thead td{
+    background-color: #4CAF50;
+    color:white;
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+.newBottom {
+    border: 1px solid red;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    margin-left: 2px;
+    padding: 2px;
+}
+
+input[type = 'reset']
+{
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: #ff7675;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .other{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: flex-start; */
+    }
+
+
+    .other .date
+    {   
+        display: flex;
+        width: 100%
+    }
+
+
+    .other .amount
+    {   
+        margin: 0.5rem 0;
+        display: flex;
+        width: 100%;
+    }
+
+    
+}

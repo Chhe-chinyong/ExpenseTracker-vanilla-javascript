@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>Expense tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <h3>Add a New Item:</h3>
+    
+    <form action="" class="form">
+        <div class="name">
+            <label for="name">Name: &nbsp;</label>
+            <input type="text" name="name" placeholder="Where was the expense made?" id="name" required>
+        </div>
+        <div class="other">
+            <div class="date">
+                <label for="date">Date:&nbsp; </label>
+                <input type="date" placeholder="mm/dd/yyyy" id="date" name= "birthday" required>
+           
+            </div>
+           <div class="amount">
+                <label for="amount"> Amount:&nbsp;</label>
+                <input type="number" name="number" id="amount" min="1" required> 
+           </div>
+       
+        </div>
+        <input type="submit" value="Add Expense" id="submit" >
+        <input type="reset">
+  
+    </form>
+
+    <!-- table -->
+    <table >
+        <thead id="thead">
+            <tr>
+                <td>Name</td>
+                <td>Date</td>
+                <td>Amount</td>
+                <td class="id"></td>
+            </tr>
+        </thead>
+        <tbody class="tbodyTag">
+            <tr class="expense-table">
+                <td colspan="4" id="expense">No expense added yet!</td>
+            </tr>
+           
+        </tbody>
+    </table>
+    </div>
+
+    <script src="./public/javascript/script.js"></script>
+</body>
+</html>
